@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import instagram from'../public/instagram.png'
+import logo from'../public/MTTDB.jpg'
 import Link from 'next/link'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Image src={logo} alt='logo' width={300}/>
           <h1>Nosso site está em construção</h1>
         <h2>Siga-nos nas redes sociais e fiquei por dentro! </h2>
         <br />
