@@ -14,8 +14,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          <h1>Nosso site esta em construcao</h1>
+          <h1>Nosso site está em construção</h1>
         <h2>Siga-nos nas redes sociais e fiquei por dentro! </h2>
+        <br />
         <Link href={'https://instagram.com/minastemtudodebom'} target='_blank'>
           <Image className='instagram' src={instagram} alt='instagram' width={50} />    
         </Link> 
