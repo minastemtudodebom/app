@@ -2,7 +2,7 @@
   padding: 0 2rem;
 }
 
-.main {
+.main{
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -10,6 +10,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.instagram {
+  width: 45px;
+  height: 45px;
 }
 
 .footer {
@@ -103,6 +107,7 @@
   line-height: 1.5;
 }
 
+
 .logo {
   height: 1em;
   margin-left: 0.5rem;
@@ -121,7 +126,7 @@
     border-color: #222;
   }
   .code {
-    background: #111;
+    background: #ffffff;
   }
   .logo img {
     filter: invert(1);
