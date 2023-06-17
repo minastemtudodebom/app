@@ -11,7 +11,7 @@ export default function Produtos() {
         <h2 className="text-2xl font-bold text-vermelho">Destaques</h2>
         <div className="h-meuh w-56 bg-vermelho" />
       </div>
-      <div className="mt-10 flex justify-center gap-5">
+      <div className="mt-10 flex flex-wrap justify-center gap-5">
         <CardDestaque
           imagem={
             <Image
