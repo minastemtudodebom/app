@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         queijo: "url('/queijo.jpg')",
+        vaca: "url('/minas-removebg-preview.png)",
       },
       fontFamily: {
         sans: 'var(--font-roboto)',
