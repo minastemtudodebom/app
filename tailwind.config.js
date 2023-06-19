@@ -18,6 +18,7 @@ module.exports = {
       colors: {
         vermelho: '#EB3237',
         beje: '#FEEFDD',
+        preto: '#343434',
       },
       dropShadow: {
         dark1: '4px 4px 5px black',

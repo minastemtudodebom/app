@@ -7,6 +7,7 @@ import {
   faUser,
   faCartShopping,
 } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 export default function Nav() {
   return (
@@ -19,11 +20,13 @@ export default function Nav() {
         </div>
         <div className="flex items-center justify-between px-5 md:justify-around">
           <div className="flex h-20 items-center justify-start md:h-32">
-            <Image
-              src={Logo}
-              alt="logo minas tem tudo de bom"
-              className="w-32 md:w-48"
-            />
+            <Link href="/">
+              <Image
+                src={Logo}
+                alt="logo minas tem tudo de bom"
+                className="w-32 md:w-48"
+              />
+            </Link>
           </div>
           <div className="hidden md:block">
             <input
@@ -42,7 +45,7 @@ export default function Nav() {
                   icon={faUser}
                   className="h-10 w-10 text-vermelho"
                 />
-                <p>Minha conta</p>
+                <p className="text-preto">Minha conta</p>
               </a>
             </div>
             <div className="space-2 flex flex-col items-center justify-center">
@@ -54,7 +57,7 @@ export default function Nav() {
                   icon={faComments}
                   className="h-10 w-10 text-vermelho"
                 />
-                <p>Atendimento</p>
+                <p className="text-preto">Atendimento</p>
               </a>
             </div>
             <div className="space-2 flex flex-col items-center justify-center">
@@ -66,7 +69,7 @@ export default function Nav() {
                   icon={faCartShopping}
                   className="h-10 w-10 text-vermelho"
                 />
-                <p>Meu carrinho</p>
+                <p className="text-preto">Meu carrinho</p>
               </a>
             </div>
           </div>
@@ -75,7 +78,7 @@ export default function Nav() {
           </div>
         </div>
       </div>
-      <div className="hidden h-9 items-center justify-around bg-vermelho font-bold text-beje drop-shadow-drop1 md:flex">
+      <div className="hidden h-9 items-center justify-around bg-vermelho font-bold text-beje drop-shadow-dark2 md:flex">
         <button>QUEIJO</button>
         <button>QUEIJO</button>
         <button>QUEIJO</button>
