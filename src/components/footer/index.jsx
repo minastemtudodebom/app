@@ -8,7 +8,7 @@ export default function Footer() {
   const ano = data.getFullYear()
   return (
     <div className="px-20">
-      <dir className="flex items-center justify-between">
+      <dir className="flex flex-col items-center  justify-between md:flex-row ">
         <div>
           <Image src={logo} alt="logo Minas tem tudo de bom" width={200} />
         </div>
@@ -17,9 +17,11 @@ export default function Footer() {
         </div>
       </dir>
       <div className="flex flex-col items-center justify-center text-center">
-        <p>{ano},Minas tem tudo de bom - Todos os Direitos Reservados</p>
+        <p className="text-sm">
+          {ano},Minas tem tudo de bom - Todos os Direitos Reservados
+        </p>
         <div className="flex">
-          <p>Developed by&nbsp; </p>{' '}
+          <p className="text-sm">Developed by&nbsp; </p>{' '}
           <a href="" className="font-bold text-vermelho">
             Rixxer &trade;
           </a>

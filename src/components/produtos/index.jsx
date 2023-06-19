@@ -7,9 +7,9 @@ export default function Produtos() {
   return (
     <div>
       <div className="mt-16 flex items-center justify-center gap-5">
-        <div className="h-meuh w-56 bg-vermelho" />
+        <div className="h-meuh w-16 bg-vermelho md:w-56" />
         <h2 className="text-2xl font-bold text-vermelho">Destaques</h2>
-        <div className="h-meuh w-56 bg-vermelho" />
+        <div className="h-meuh w-16 bg-vermelho md:w-56" />
       </div>
       <div className="mt-10 flex flex-wrap justify-center gap-5">
         <CardDestaque
@@ -53,9 +53,9 @@ export default function Produtos() {
         />
       </div>
       <div className="mt-16 flex items-center justify-center gap-5">
-        <div className="h-meuh w-56 bg-vermelho" />
+        <div className="h-meuh w-16 bg-vermelho md:w-56" />
         <h2 className="text-2xl font-bold text-vermelho">Produtos</h2>
-        <div className="h-meuh w-56 bg-vermelho" />
+        <div className="h-meuh w-16 bg-vermelho md:w-56" />
       </div>
       <div className="mt-10 flex flex-wrap justify-center gap-5 px-5">
         <Card
