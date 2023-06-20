@@ -49,20 +49,38 @@ export default function Sidebar() {
         </Link>
         <Link
           href="??"
-          className=" text-yellow1 mt-20 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-zinc-400"
+          className=" text-yellow1 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-zinc-400"
         >
           <FontAwesomeIcon icon={faComments} className="h-5 text-vermelho" />
           <p>Atendimento</p>
         </Link>
         <Link
           href="??"
-          className=" text-yellow1 mt-20 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-zinc-400"
+          className=" text-yellow1 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-zinc-400"
         >
           <FontAwesomeIcon
             icon={faCartShopping}
             className="h-5 text-vermelho"
           />
           <p>Meu Carrinho</p>
+        </Link>
+        <Link
+          href="quem-somos"
+          className=" text-yellow1 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-zinc-400"
+        >
+          <p>Quem somos</p>
+        </Link>
+        <Link
+          href="politica-de-privacidade"
+          className=" text-yellow1  flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-zinc-400"
+        >
+          <p>Política de privacidade</p>
+        </Link>
+        <Link
+          href="envio"
+          className=" text-yellow1 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-zinc-400"
+        >
+          <p>Envio</p>
         </Link>
       </div>
     </>
