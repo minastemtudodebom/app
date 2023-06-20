@@ -13,10 +13,10 @@ export default function Details({ title, price, avista, parcelado }) {
   const [count, setCount] = useState(0)
   return (
     <div>
-      <div className="flex justify-around">
+      <div className="flex flex-col justify-around md:flex-row">
         <FotoMini />
         <Foto />
-        <div className="mt-20 flex flex-col  gap-5">
+        <div className="mt-20 flex flex-col items-center justify-center gap-5 md:items-start">
           <div className="text-5xl font-black text-preto">{title}</div>
           <div className="text-4xl font-bold text-vermelho">{price}</div>
           <div className="flex flex-col gap-2">

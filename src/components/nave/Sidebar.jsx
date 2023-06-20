@@ -6,8 +6,10 @@ import {
   faUser,
   faCartShopping,
 } from '@fortawesome/free-solid-svg-icons'
+import logo from '../../../public/minas-removebg-preview.png'
 
 import { useState } from 'react'
+import Image from 'next/image'
 export default function Sidebar() {
   const [showSidebar, setShowSidebar] = useState(false)
 
@@ -82,6 +84,9 @@ export default function Sidebar() {
         >
           <p>Envio</p>
         </Link>
+        <div className="flex items-center justify-center">
+          <Image src={logo} alt="logo" />
+        </div>
       </div>
     </>
   )

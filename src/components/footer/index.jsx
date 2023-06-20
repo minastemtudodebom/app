@@ -8,7 +8,7 @@ export default function Footer() {
   const data = new Date()
   const ano = data.getFullYear()
   return (
-    <div className="mt-20 flex flex-col border-t border-vermelho">
+    <div className=" flex flex-col border-t border-vermelho">
       <dir className="flex flex-col items-center justify-between pr-10 md:flex-row">
         <div>
           <Image src={logo} alt="logo Minas tem tudo de bom" width={200} />
