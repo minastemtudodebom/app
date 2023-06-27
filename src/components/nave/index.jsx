@@ -41,7 +41,7 @@ export default function Nav() {
               <Link href="/" className="flex flex-col items-center ">
                 <FontAwesomeIcon
                   icon={faHome}
-                  className="h-10 w-10 text-vermelho"
+                  className="h-7 w-10 text-vermelho"
                 />
                 <p className="text-preto transition-all duration-300 ease-in-out hover:text-vermelho">
                   Início
@@ -52,7 +52,7 @@ export default function Nav() {
               <Link href="/cadastro" className="flex flex-col items-center ">
                 <FontAwesomeIcon
                   icon={faUser}
-                  className="h-10 w-10 text-vermelho"
+                  className="h-7 w-10 text-vermelho"
                 />
                 <p className="text-preto transition-all duration-300 ease-in-out hover:text-vermelho">
                   Minha conta
@@ -63,7 +63,7 @@ export default function Nav() {
               <a href="" className="flex flex-col items-center ">
                 <FontAwesomeIcon
                   icon={faComments}
-                  className="h-10 w-10 text-vermelho"
+                  className="h-7 w-10 text-vermelho"
                 />
                 <p className="text-preto transition-all duration-300 ease-in-out hover:text-vermelho">
                   Atendimento
@@ -74,7 +74,7 @@ export default function Nav() {
               <a href="" className="flex flex-col items-center">
                 <FontAwesomeIcon
                   icon={faCartShopping}
-                  className="h-10 w-10 text-vermelho"
+                  className="h-7 w-10 text-vermelho"
                 />
                 <p className="text-preto transition-all duration-300 ease-in-out hover:text-vermelho">
                   Meu carrinho
