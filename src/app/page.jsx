@@ -3,6 +3,7 @@ import Artigo from '@/components/artigo'
 import Produtos from '@/components/produtos'
 import Footer from '@/components/footer'
 import Blog from '@/components/blog'
+import Wpp from '@/components/wpp'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Produtos />
       <Blog />
       <Footer />
+      <Wpp />
     </div>
   )
 }
