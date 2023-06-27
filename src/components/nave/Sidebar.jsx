@@ -22,13 +22,13 @@ export default function Sidebar() {
       {showSidebar ? (
         <button
           className="fixed right-10 top-6 z-50 flex cursor-pointer items-center text-4xl text-vermelho"
-          onClick={() => setShowSidebar(!showSidebar)}
+          onClick={(() => setShowSidebar(!showSidebar), 1000)}
         >
           x
         </button>
       ) : (
         <svg
-          onClick={(() => setShowSidebar(!showSidebar), 1000)}
+          onClick={() => setShowSidebar(!showSidebar)}
           className="right-10 top-6 z-30 flex cursor-pointer items-center"
           fill="#EB3237"
           viewBox="0 0 100 80"
