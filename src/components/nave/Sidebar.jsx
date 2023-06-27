@@ -19,33 +19,29 @@ export default function Sidebar() {
 
   return (
     <>
-      {showSidebar ? (
-        <button
-          className="fixed right-10 top-6 z-50 flex cursor-pointer items-center text-4xl text-vermelho"
-          onClick={(() => setShowSidebar(!showSidebar), 1000)}
-        >
-          x
-        </button>
-      ) : (
-        <svg
-          onClick={() => setShowSidebar(!showSidebar)}
-          className="right-10 top-6 z-30 flex cursor-pointer items-center"
-          fill="#EB3237"
-          viewBox="0 0 100 80"
-          width="30"
-          height="30"
-        >
-          <rect width="100" height="10"></rect>
-          <rect y="30" width="100" height="10"></rect>
-          <rect y="60" width="100" height="10"></rect>
-        </svg>
-      )}
-
+      <svg
+        onClick={() => setShowSidebar(!showSidebar)}
+        className="right-10 top-6 z-30 flex cursor-pointer items-center"
+        fill="#EB3237"
+        viewBox="0 0 100 80"
+        width="30"
+        height="30"
+      >
+        <rect width="100" height="10"></rect>
+        <rect y="30" width="100" height="10"></rect>
+        <rect y="60" width="100" height="10"></rect>
+      </svg>
       <div
         className={`text-yellow1 fixed right-0 top-0 z-40 flex h-full w-[70vw]  flex-col bg-beje transition-all duration-1000 ease-in-out ${
           showSidebar ? 'translate-x-0 ' : 'translate-x-full'
         }`}
       >
+        <button
+          className="fixed right-10 top-6 z-50 flex cursor-pointer items-center text-4xl text-vermelho"
+          onClick={() => setShowSidebar(!showSidebar)}
+        >
+          x
+        </button>
         <Link
           href="/"
           className=" text-yellow1 mt-20 flex cursor-pointer items-center space-x-5 p-2 pl-5 text-sm font-semibold text-vermelho shadow-lg duration-300 ease-in-out hover:text-zinc-400"
