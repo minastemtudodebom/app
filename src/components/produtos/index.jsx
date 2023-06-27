@@ -52,7 +52,10 @@ export default function Produtos() {
           }
         />
       </div>
-      <div className="mt-16 flex items-center justify-center gap-5">
+      <div
+        id="produtos"
+        className="mt-16 flex items-center justify-center gap-5"
+      >
         <div className="h-meuh w-16 bg-vermelho md:w-56" />
         <h2 className="text-2xl font-bold text-vermelho">Produtos</h2>
         <div className="h-meuh w-16 bg-vermelho md:w-56" />

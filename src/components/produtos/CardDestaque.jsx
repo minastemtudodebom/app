@@ -14,7 +14,7 @@ export default function CardDestaque({ imagem, produto, valor, pagamento }) {
           </button>
           <Link
             href="/detalhes"
-            className="mb-5 rounded-xl bg-vermelho px-5 py-1 font-bold text-beje drop-shadow-dark2 transition-all duration-300 ease-in-out hover:bg-red-500"
+            className="mb-5 rounded-xl bg-vermelho px-5 py-2 font-bold text-beje drop-shadow-dark2 transition-all duration-300 ease-in-out hover:bg-red-500"
           >
             Detalhes
           </Link>

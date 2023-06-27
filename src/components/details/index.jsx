@@ -43,16 +43,16 @@ export default function Details({ title, price, avista, parcelado }) {
               <div className="flex w-28 items-center justify-center gap-5 rounded-xl border border-vermelho">
                 <button
                   className="text-2xl text-vermelho"
-                  onClick={() => setCount(count + 1)}
+                  onClick={() => setCount(count - 1)}
                 >
-                  +
+                  -
                 </button>
                 <p className="text-xl text-vermelho">{count}</p>
                 <button
                   className="text-xl text-vermelho"
-                  onClick={() => setCount(count - 1)}
+                  onClick={() => setCount(count + 1)}
                 >
-                  -
+                  +
                 </button>
               </div>
               <button className=" w-32 rounded-xl bg-vermelho px-5 py-1 font-bold text-beje transition-all duration-300 ease-in-out hover:bg-red-500">

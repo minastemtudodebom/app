@@ -6,6 +6,7 @@ import {
   faComments,
   faUser,
   faCartShopping,
+  faHome,
 } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 
@@ -37,39 +38,47 @@ export default function Nav() {
           </div>
           <div className="hidden gap-10 md:flex ">
             <div className="space-2 flex flex-col items-center justify-center">
-              <a
-                href=""
-                className="flex flex-col items-center transition-all duration-300 ease-in-out hover:text-vermelho"
-              >
+              <Link href="/" className="flex flex-col items-center ">
+                <FontAwesomeIcon
+                  icon={faHome}
+                  className="h-10 w-10 text-vermelho"
+                />
+                <p className="text-preto transition-all duration-300 ease-in-out hover:text-vermelho">
+                  Início
+                </p>
+              </Link>
+            </div>
+            <div className="space-2 flex flex-col items-center justify-center">
+              <Link href="/cadastro" className="flex flex-col items-center ">
                 <FontAwesomeIcon
                   icon={faUser}
                   className="h-10 w-10 text-vermelho"
                 />
-                <p className="text-preto">Minha conta</p>
-              </a>
+                <p className="text-preto transition-all duration-300 ease-in-out hover:text-vermelho">
+                  Minha conta
+                </p>
+              </Link>
             </div>
             <div className="space-2 flex flex-col items-center justify-center">
-              <a
-                href=""
-                className="flex flex-col items-center transition-all duration-300 ease-in-out hover:text-vermelho"
-              >
+              <a href="" className="flex flex-col items-center ">
                 <FontAwesomeIcon
                   icon={faComments}
                   className="h-10 w-10 text-vermelho"
                 />
-                <p className="text-preto">Atendimento</p>
+                <p className="text-preto transition-all duration-300 ease-in-out hover:text-vermelho">
+                  Atendimento
+                </p>
               </a>
             </div>
             <div className="space-2 flex flex-col items-center justify-center">
-              <a
-                href=""
-                className="flex flex-col items-center transition-all duration-300 ease-in-out hover:text-vermelho"
-              >
+              <a href="" className="flex flex-col items-center">
                 <FontAwesomeIcon
                   icon={faCartShopping}
                   className="h-10 w-10 text-vermelho"
                 />
-                <p className="text-preto">Meu carrinho</p>
+                <p className="text-preto transition-all duration-300 ease-in-out hover:text-vermelho">
+                  Meu carrinho
+                </p>
               </a>
             </div>
           </div>

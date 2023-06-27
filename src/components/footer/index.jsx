@@ -8,7 +8,7 @@ export default function Footer() {
   const data = new Date()
   const ano = data.getFullYear()
   return (
-    <div className=" flex flex-col border-t border-vermelho">
+    <div className="flex flex-col border-t border-vermelho">
       <dir className="flex flex-col items-center justify-between pr-10 md:flex-row">
         <div>
           <Image src={logo} alt="logo Minas tem tudo de bom" width={200} />
@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
       </dir>
       <div className="mb-20 flex flex-col items-center justify-center gap-10 font-bold md:flex-row">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col items-center justify-center gap-5 md:items-start md:justify-start">
           <Link href={'/'} className="text-vermelho">
             Início
           </Link>
@@ -32,7 +32,7 @@ export default function Footer() {
             Envio
           </Link>
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col items-center justify-center gap-5 md:items-start md:justify-start">
           <Link href={'/quem-somos'} className="text-vermelho">
             Quem somos
           </Link>
