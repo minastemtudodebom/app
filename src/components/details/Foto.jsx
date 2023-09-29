@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import queijo from '../../../public/queijo.jpg'
+import Image from "next/image";
+import queijo from "../../../public/queijo.jpg";
 
 export default function Foto() {
   return (
@@ -10,5 +10,5 @@ export default function Foto() {
         className="w-96 md:w-[600px]"
       />
     </div>
-  )
+  );
 }

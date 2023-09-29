@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import vaca from '../../../public/vaca.png'
-import Section from './Section'
+import Image from "next/image";
+import vaca from "../../../public/vaca.png";
+import Section from "./Section";
 
 export default function Largura() {
   return (
@@ -22,5 +22,5 @@ export default function Largura() {
       </div>
       <Section />
     </div>
-  )
+  );
 }

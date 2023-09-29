@@ -1,14 +1,14 @@
-import Image from 'next/image'
-import Logo from '../../../public/minas-removebg-preview.png'
-import Sidebar from './Sidebar'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from "next/image";
+import Logo from "../../../public/minas-removebg-preview.png";
+import Sidebar from "./Sidebar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComments,
   faUser,
   faCartShopping,
   faHome,
-} from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
+} from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function Nav() {
   return (
@@ -16,7 +16,7 @@ export default function Nav() {
       <div className="font-sans">
         <div className="bg-vermelho">
           <h2 className="flex h-5 items-center justify-center text-sm font-bold text-beje">
-            Frete Grátis nas compras acima de R$ 300,00{' '}
+            Frete Grátis nas compras acima de R$ 300,00{" "}
           </h2>
         </div>
         <div className="flex items-center justify-between px-5 md:justify-around">
@@ -95,5 +95,5 @@ export default function Nav() {
         <button>QUEIJO</button>
       </div>
     </div>
-  )
+  );
 }

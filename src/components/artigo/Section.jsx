@@ -1,9 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheese,
   faLocationDot,
   faShield,
-} from '@fortawesome/free-solid-svg-icons'
+} from "@fortawesome/free-solid-svg-icons";
 export default function Section() {
   return (
     <div className="flex flex-col items-center justify-around gap-5 bg-vermelho py-5 font-bold text-beje md:h-28 md:flex-row md:py-0 md:text-2xl">
@@ -22,5 +22,5 @@ export default function Section() {
         <h2 className="w-56">Loja 100% segura compra garantida</h2>
       </div>
     </div>
-  )
+  );
 }

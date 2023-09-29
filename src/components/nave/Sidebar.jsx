@@ -1,6 +1,6 @@
-'use client'
-import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+"use client";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComments,
   faUser,
@@ -9,13 +9,13 @@ import {
   faLock,
   faTruckFast,
   faHome,
-} from '@fortawesome/free-solid-svg-icons'
-import logo from '../../../public/minas-removebg-preview.png'
+} from "@fortawesome/free-solid-svg-icons";
+import logo from "../../../public/minas-removebg-preview.png";
 
-import { useState } from 'react'
-import Image from 'next/image'
+import { useState } from "react";
+import Image from "next/image";
 export default function Sidebar() {
-  const [showSidebar, setShowSidebar] = useState(false)
+  const [showSidebar, setShowSidebar] = useState(false);
 
   return (
     <>
@@ -33,7 +33,7 @@ export default function Sidebar() {
       </svg>
       <div
         className={`text-yellow1 fixed right-0 top-0 z-40 flex h-full w-[70vw]  flex-col bg-beje transition-all duration-1000 ease-in-out ${
-          showSidebar ? 'translate-x-0 ' : 'translate-x-full'
+          showSidebar ? "translate-x-0 " : "translate-x-full"
         }`}
       >
         <button
@@ -99,5 +99,5 @@ export default function Sidebar() {
         </div>
       </div>
     </>
-  )
+  );
 }

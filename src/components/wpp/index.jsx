@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons'
-import Link from 'next/link'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsappSquare } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 export default function Wpp() {
   return (
@@ -12,5 +12,5 @@ export default function Wpp() {
         />
       </Link>
     </div>
-  )
+  );
 }

@@ -1,16 +1,16 @@
-'use client'
-import { faPix } from '@fortawesome/free-brands-svg-icons'
-import { faCreditCard, faMoneyBill } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useState } from 'react'
-import Envio from './Envio'
-import Foto from './Foto'
-import FotoMini from './FotoMini'
-import Descricao from './Descricao'
-import Footer from '../footer'
+"use client";
+import { faPix } from "@fortawesome/free-brands-svg-icons";
+import { faCreditCard, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import Envio from "./Envio";
+import Foto from "./Foto";
+import FotoMini from "./FotoMini";
+import Descricao from "./Descricao";
+import Footer from "../footer";
 
 export default function Details({ title, price, avista, parcelado }) {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   return (
     <div>
       <div className="flex flex-col justify-around md:flex-row">
@@ -68,5 +68,5 @@ export default function Details({ title, price, avista, parcelado }) {
       </div>
       <Footer />
     </div>
-  )
+  );
 }
