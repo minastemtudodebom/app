@@ -43,9 +43,9 @@ export default function CardDestaque({
   const averageRating = calculateAverageRating(ratings);
   return (
     <div>
-      <div className="flex w-80 flex-col items-center justify-center rounded-xl border-4 border-vermelho text-center">
+      <div className="flex w-80 flex-col items-center justify-center rounded-2xl border-2 border-vermelho text-center">
         <div className="">
-          <Image src={imagem} width={300} height={300} alt={produto} />
+          <Image src={imagem} width={350} height={300} alt={produto} className="rounded-t-xl" />
         </div>
         <div className="mt-5 text-2xl font-bold">{produto}</div>
         <StarRating rating={averageRating} />

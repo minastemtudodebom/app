@@ -30,13 +30,13 @@ function DatabaseRead({ currentPage, itemsPerPage }) {
   return (
     <div className="grid grid-cols-1 items-center justify-center gap-5 pb-10 md:grid-cols-2 xl:grid-cols-4">
       {produto.map((item) => {
-        console.log(item.imagens);
+        console.log(item.produto);
         if (Array.isArray(item.imagens) && item.imagens.length > 0) {
           const primeiroLink = item.imagens[0];
           return (
             <CardDestaque
               key={item.id}
-              prodruto={item.produto}
+              produto={item.produto}
               valor={item.valor}
               imagem={primeiroLink}
               ratings={item.avaliacao}
