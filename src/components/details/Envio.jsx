@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTruckFast } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTruckFast } from "@fortawesome/free-solid-svg-icons";
 export default function Envio() {
   return (
     <div>
@@ -18,5 +18,5 @@ export default function Envio() {
         </button>
       </div>
     </div>
-  )
+  );
 }
