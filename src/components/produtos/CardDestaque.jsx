@@ -43,7 +43,7 @@ export default function CardDestaque({
   const averageRating = calculateAverageRating(ratings);
   return (
     <div>
-      <div className="flex w-80 flex-col items-center justify-center rounded-2xl border-2 border-vermelho text-center">
+      <div className="flex w-64 md:w-80 flex-col items-center justify-center rounded-2xl border-2 border-vermelho text-center">
         <div className="">
           <Image src={imagem} width={350} height={300} alt={produto} className="rounded-t-xl" />
         </div>

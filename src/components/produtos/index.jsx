@@ -59,8 +59,8 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
           className={`mr-2 rounded-full px-2 
          ${
            currentPage === page
-             ? "bg-primary text-white"
-             : "text-secondary hover:bg-secondary bg-white"
+             ? "bg-vermelho text-white"
+             : "text-secondary hover:bg-vermelho bg-zinc-300"
          }
        `}
         >
@@ -73,7 +73,7 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
 
 export default function Produtos() {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 12;
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
@@ -106,7 +106,7 @@ export default function Produtos() {
         <h2 className="text-2xl font-bold text-vermelho">Produtos</h2>
         <div className="h-meuh w-16 bg-vermelho md:w-56" />
       </div>
-      <div className="mt-10 flex flex-wrap justify-center gap-5 px-5">
+      <div className="mt-10 flex flex-col justify-center items-center gap-5 px-5">
         <DatabaseRead currentPage={currentPage} itemsPerPage={itemsPerPage} />
         <Pagination
           currentPage={currentPage}
