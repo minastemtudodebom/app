@@ -60,7 +60,7 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
          ${
            currentPage === page
              ? "bg-vermelho text-white"
-             : "text-secondary hover:bg-vermelho bg-zinc-300"
+             : "text-secondary hover:bg-vermelho hover:text-white bg-zinc-300"
          }
        `}
         >
