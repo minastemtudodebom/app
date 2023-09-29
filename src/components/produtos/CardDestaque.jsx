@@ -1,5 +1,5 @@
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -9,13 +9,13 @@ function calculateAverageRating(ratings) {
   }
 
   // const totalRating = ratings.reduce((acc, rating) => acc + rating, 0);
-  const averageRating = ratings.length;
+  const averageRating = ratings.length
   return averageRating;
 }
 
 function StarRating({ rating }) {
   const numStars = 5;
-  const filledStars = Math.floor(rating);
+  const filledStars = Math.floor(rating)
 
   const starIcons = [];
   for (let i = 0; i < numStars; i++) {
@@ -34,7 +34,7 @@ function StarRating({ rating }) {
 }
 
 export default function CardDestaque({ imagem, produto, valor, pagamento,ratings, }) {
-  const averageRating = calculateAverageRating(ratings);
+  const averageRating = calculateAverageRating(ratings)
   return (
     <div>
       <div className="flex w-80 flex-col items-center justify-center rounded-xl border-4 border-vermelho text-center">
@@ -43,7 +43,7 @@ export default function CardDestaque({ imagem, produto, valor, pagamento,ratings
         </div>
         <div className="mt-5 text-2xl font-bold">{produto}</div>
         <StarRating rating={averageRating} />
-        <div className="text-2xl font-bold text-vermelho">{valor}</div>
+        <div className="text-2xl font-bold text-vermelho">R$ {valor}</div>
         <div className="p-5 text-sm">{pagamento}</div>
         <div className="space-x-5">
           <button className="mb-5 rounded-xl bg-vermelho px-5 py-1 font-bold text-beje drop-shadow-dark2 transition-all duration-300 ease-in-out hover:bg-red-500">

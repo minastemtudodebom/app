@@ -1,7 +1,7 @@
-"use client"
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link'
+'use client'
+import { faStar } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Link from "next/link"
 
 function calculateAverageRating(ratings) {
   if (!ratings || ratings.length === 0) {
@@ -9,13 +9,13 @@ function calculateAverageRating(ratings) {
   }
 
   // const totalRating = ratings.reduce((acc, rating) => acc + rating, 0);
-  const averageRating = ratings.length;
-  return averageRating;
+  const averageRating = ratings.length
+  return averageRating
 }
 
 function StarRating({ rating }) {
   const numStars = 5;
-  const filledStars = Math.floor(rating);
+  const filledStars = Math.floor(rating)
 
   const starIcons = [];
   for (let i = 0; i < numStars; i++) {
@@ -30,13 +30,17 @@ function StarRating({ rating }) {
     }
   }
 
-  return <div className="flex drop-shadow-dark0">{starIcons}</div>;
+  return <div className="drop-shadow-dark0 flex">{starIcons}</div>
 }
 
-
-export default function CardDestaque({ imagem, produto, valor, pagamento,ratings }) {
-
-  const averageRating = calculateAverageRating(ratings);
+export default function CardDestaque({
+  imagem,
+  produto,
+  valor,
+  pagamento,
+  ratings,
+}) {
+  const averageRating = calculateAverageRating(ratings)
   return (
     <div>
       <div className="flex w-80 flex-col items-center justify-center rounded-xl border-4 border-vermelho text-center">
@@ -59,5 +63,5 @@ export default function CardDestaque({ imagem, produto, valor, pagamento,ratings
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-"use client";
-import CardDestaque from "./CardDestaque";
-import React, { useEffect, useState } from "react";
-import { db } from "../../../config/firebase";
-import { collection, getDocs } from "firebase/firestore";
+'use client'
+import CardDestaque from "./CardDestaque"
+import React, { useEffect, useState } from "react"
+import { db } from "../../../config/firebase"
+import { collection, getDocs } from "firebase/firestore"
 
 
 function DatabaseRead({ currentPage, itemsPerPage }) {
@@ -14,26 +14,26 @@ function DatabaseRead({ currentPage, itemsPerPage }) {
     async function fetchData() {
       try {
         async function getProduto() {
-          const dataCollection = collection(db, "produtos");
-          const dataSnapshot = await getDocs(dataCollection);
-          const dataList = dataSnapshot.docs.map((doc) => doc.data());
-          setProduto(dataList.slice(startIndex, endIndex)); // Filtra os itens da página atual
+          const dataCollection = collection(db, "produtos")
+          const dataSnapshot = await getDocs(dataCollection)
+          const dataList = dataSnapshot.docs.map((doc) => doc.data())
+          setProduto(dataList.slice(startIndex, endIndex))// Filtra os itens da página atual
         }
         getProduto();
       } catch (error) {
-        console.error("Erro:", error);
+        console.error("Erro:", error)
       }
     }
 
-    fetchData();
-  }, [currentPage]);
+    fetchData()
+  }, [currentPage])
 
   return (
     <div className="grid grid-cols-1 items-center justify-center gap-5 pb-10 md:grid-cols-2 xl:grid-cols-4">
       {produto.map((item) => {
         console.log(item.imagens)
         if (Array.isArray(item.imagens) && item.imagens.length > 0) {
-          const primeiroLink = item.imagens[0];
+          const primeiroLink = item.imagens[0]
           return (
             <CardDestaque
               key={item.id}
@@ -49,7 +49,7 @@ function DatabaseRead({ currentPage, itemsPerPage }) {
   );
 }
 const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
-  const pages = [...Array(totalPages).keys()].map((page) => page + 1);
+  const pages = [...Array(totalPages).keys()].map((page) => page + 1)
 
   return (
     <div className="pagination space-x-5 ">
@@ -73,20 +73,20 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
 };
 
 export default function Produtos() {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 10;
-  const [totalPages, setTotalPages] = useState(1);
+  const [totalPages, setTotalPages] = useState(1)
 
   useEffect(() => {
     async function fetchTotalItems() {
       try {
-        const dataCollection = collection(db, "produtos");
-        const dataSnapshot = await getDocs(dataCollection);
-        const totalItems = dataSnapshot.docs.length;
-        const calculatedTotalPages = Math.ceil(totalItems / itemsPerPage);
+        const dataCollection = collection(db, "produtos")
+        const dataSnapshot = await getDocs(dataCollection)
+        const totalItems = dataSnapshot.docs.length
+        const calculatedTotalPages = Math.ceil(totalItems / itemsPerPage)
         setTotalPages(calculatedTotalPages);
       } catch (error) {
-        console.error("Erro ao obter total de itens:", error);
+        console.error("Erro ao obter total de itens:", error)
       }
     }
     fetchTotalItems();
