@@ -19,7 +19,7 @@ function DatabaseRead({ currentPage, itemsPerPage }) {
           const dataList = dataSnapshot.docs.map((doc) => doc.data())
           setProduto(dataList.slice(startIndex, endIndex))// Filtra os itens da página atual
         }
-        getProduto();
+        getProduto()
       } catch (error) {
         console.error('Erro:', error)
       }
@@ -42,11 +42,11 @@ function DatabaseRead({ currentPage, itemsPerPage }) {
               imagem={primeiroLink}
               ratings={item.avaliacao}
             />
-          );
+          )
         }
       })}
     </div>
-  );
+  )
 }
 const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
   const pages = [...Array(totalPages).keys()].map((page) => page + 1)
@@ -69,12 +69,12 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
         </button>
       ))}
     </div>
-  );
-};
+  )
+}
 
 export default function Produtos() {
   const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 10;
+  const itemsPerPage = 10
   const [totalPages, setTotalPages] = useState(1)
 
   useEffect(() => {
@@ -90,7 +90,7 @@ export default function Produtos() {
       }
     }
     fetchTotalItems()
-  }, []);
+  }, [])
   return (
     <div>
       <div className='mt-16 flex items-center justify-center gap-5'>
@@ -116,5 +116,5 @@ export default function Produtos() {
         />
       </div>
     </div>
-  );
+  )
 }
