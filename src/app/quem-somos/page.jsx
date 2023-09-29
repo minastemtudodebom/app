@@ -1,5 +1,5 @@
-import Footer from '@/components/footer'
-import Nav from '@/components/nave'
+import Footer from "@/components/footer";
+import Nav from "@/components/nave";
 
 export default function QuemSomos() {
   return (
@@ -42,5 +42,5 @@ export default function QuemSomos() {
       </dir>
       <Footer />
     </div>
-  )
+  );
 }

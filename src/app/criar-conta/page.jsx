@@ -1,5 +1,5 @@
-'use client'
+"use client";
 
 export default function Formulario() {
-  return <div></div>
+  return <div></div>;
 }

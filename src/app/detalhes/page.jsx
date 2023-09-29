@@ -1,5 +1,5 @@
-import Details from '@/components/details'
-import Nav from '@/components/nave'
+import Details from "@/components/details";
+import Nav from "@/components/nave";
 
 export default function Detalhes() {
   return (
@@ -7,5 +7,5 @@ export default function Detalhes() {
       <Nav />
       <Details title="Queijo Minas" price="R$100,00" />
     </div>
-  )
+  );
 }
