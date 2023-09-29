@@ -87,12 +87,9 @@ export default function Nav() {
           </div>
         </div>
       </div>
-      <div className="hidden h-9 items-center justify-around bg-vermelho font-bold text-beje drop-shadow-dark2 md:flex">
-        <button>QUEIJO</button>
-        <button>QUEIJO</button>
-        <button>QUEIJO</button>
-        <button>QUEIJO</button>
-        <button>QUEIJO</button>
+      <div className="hidden h-9 items-center justify-center gap-10 bg-vermelho font-bold text-beje drop-shadow-dark2 md:flex">
+        <button>QUEIJOS</button>
+        <button>DOCES</button>   
       </div>
     </div>
   );

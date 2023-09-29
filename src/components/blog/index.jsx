@@ -21,26 +21,6 @@ export default function Blog() {
           title="Título"
           description="Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos,"
         />
-        <Card
-          title="Título"
-          description="Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos,"
-        />
-        <Card
-          title="Título"
-          description="Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos,"
-        />
-        <Card
-          title="Título"
-          description="Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos,"
-        />
-        <Card
-          title="Título"
-          description="Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos,"
-        />
-        <Card
-          title="Título"
-          description="Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos,"
-        />
       </div>
     </div>
   );
