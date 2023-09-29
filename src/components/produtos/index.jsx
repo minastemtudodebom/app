@@ -1,21 +1,9 @@
 "use client";
 import CardDestaque from "./CardDestaque";
-import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { db } from "../../../config/firebase";
 import { collection, getDocs } from "firebase/firestore";
-import Card from "../blog/Card";
 
-function calculateAverageRating(ratings) {
-  if (!ratings || ratings.length === 0) {
-    return 0; // Se não houver avaliações ou se ratings for undefined, a média é 0.
-  }
-
-  // const totalRating = ratings.reduce((acc, rating) => acc + rating, 0);
-  const averageRating = ratings.length;
-  return averageRating;
-}
 
 function DatabaseRead({ currentPage, itemsPerPage }) {
   const [produto, setProduto] = useState([]);
