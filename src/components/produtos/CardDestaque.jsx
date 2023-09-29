@@ -1,10 +1,13 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function CardDestaque({ imagem, produto, valor, pagamento }) {
   return (
     <div>
       <div className="flex w-80 flex-col items-center justify-center rounded-xl border-4 border-vermelho text-center">
-        <div className="">{imagem}</div>
+        <div className="">
+          <Image src={imagem} width={300} height={300} alt={produto}/>
+        </div>
         <div className="mt-5 text-2xl font-bold">{produto}</div>
         <div className="text-2xl font-bold text-vermelho">{valor}</div>
         <div className="p-5 text-sm">{pagamento}</div>
