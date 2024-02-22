@@ -31,10 +31,10 @@ const QueijoPage = () => {
   }
 
   return (
-    <Layout>
+    <div>
       <h1>{article.title}</h1>
       <p>{article.description}</p>
-    </Layout>
+    </div>
   );
 };
 
