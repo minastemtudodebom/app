@@ -40,6 +40,7 @@ function DatabaseRead({ currentPage, itemsPerPage }) {
               valor={item.valor}
               imagem={primeiroLink}
               ratings={item.avaliacao}
+              linkcompra={item.linkcompra}
             />
           );
         }
@@ -57,11 +58,10 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
           key={page}
           onClick={() => setCurrentPage(page)}
           className={`mr-2 rounded-full px-2 
-         ${
-           currentPage === page
-             ? "bg-vermelho text-white"
-             : "text-secondary hover:bg-vermelho hover:text-white bg-zinc-300"
-         }
+         ${currentPage === page
+              ? "bg-vermelho text-white"
+              : "text-secondary hover:bg-vermelho hover:text-white bg-zinc-300"
+            }
        `}
         >
           {page}
@@ -92,21 +92,16 @@ export default function Produtos() {
   }, []);
   return (
     <div>
-      <div className="mt-16 flex items-center justify-center gap-5">
-        <div className="h-meuh w-16 bg-vermelho md:w-56" />
-        <h2 className="text-2xl font-bold text-vermelho">Destaques</h2>
-        <div className="h-meuh w-16 bg-vermelho md:w-56" />
-      </div>
       <div className="mt-10 flex flex-wrap justify-center gap-5"></div>
       <div
         id="produtos"
         className="mt-16 flex items-center justify-center gap-5"
       >
         <div className="h-meuh w-16 bg-vermelho md:w-56" />
-        <h2 className="text-2xl font-bold text-vermelho">Produtos</h2>
+        <h2 className="text-2xl font-bold text-vermelho">Confira nossos Produtos</h2>
         <div className="h-meuh w-16 bg-vermelho md:w-56" />
       </div>
-      <div className="mt-10 flex flex-col justify-center items-center gap-5 px-5">
+      <div className="mt-20 flex flex-col justify-center items-center gap-5 px-5">
         <DatabaseRead currentPage={currentPage} itemsPerPage={itemsPerPage} />
         <Pagination
           currentPage={currentPage}

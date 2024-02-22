@@ -6,38 +6,10 @@ export default function QuemSomos() {
     <div className="bg-beje">
       <Nav />
       <dir className="flex flex-col items-center px-5 text-justify md:mt-20 md:px-20">
-        <h2 className="py-5 text-5xl text-vermelho">Título</h2>
+        <h2 className="py-5 text-5xl font-bold mb-12 text-vermelho">Quem somos</h2>
         <p className="">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
-          expedita quas ullam, earum quidem iure quasi blanditiis culpa officia
-          quod commodi saepe hic consequatur similique exercitationem dolore ad
-          omnis aspernatur.Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Neque expedita quas ullam, earum quidem iure quasi blanditiis
-          culpa officia quod commodi saepe hic consequatur similique
-          exercitationem dolore ad omnis aspernatur.Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Neque expedita quas ullam, earum quidem
-          iure quasi blanditiis culpa officia quod commodi saepe hic consequatur
-          similique exercitationem dolore ad omnis aspernatur.Lorem, ipsum dolor
-          sit amet consectetur adipisicing elit. Neque expedita quas ullam,
-          earum quidem iure quasi blanditiis culpa officia quod commodi saepe
-          hic consequatur similique exercitationem dolore ad omnis
-          aspernatur.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Neque expedita quas ullam, earum quidem iure quasi blanditiis culpa
-          officia quod commodi saepe hic consequatur similique exercitationem
-          dolore ad omnis aspernatur.Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Neque expedita quas ullam, earum quidem iure quasi
-          blanditiis culpa officia quod commodi saepe hic consequatur similique
-          exercitationem dolore ad omnis aspernatur.Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Neque expedita quas ullam, earum quidem
-          iure quasi blanditiis culpa officia quod commodi saepe hic consequatur
-          similique exercitationem dolore ad omnis aspernatur.Lorem, ipsum dolor
-          sit amet consectetur adipisicing elit. Neque expedita quas ullam,
-          earum quidem iure quasi blanditiis culpa officia quod commodi saepe
-          hic consequatur similique exercitationem dolore ad omnis
-          aspernatur.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Neque expedita quas ullam, earum quidem iure quasi blanditiis culpa
-          officia quod commodi saepe hic consequatur similique exercitationem
-          dolore ad omnis aspernatur.
+          Somos a Minas Tem Tudo de Bom!
+          <br /><br /><br />
         </p>
       </dir>
       <Footer />

@@ -5,10 +5,8 @@ import Link from "next/link";
 
 function calculateAverageRating(ratings) {
   if (!ratings || ratings.length === 0) {
-    return 0; // Se não houver avaliações ou se ratings for undefined, a média é 0.
+    return 0;
   }
-
-  // const totalRating = ratings.reduce((acc, rating) => acc + rating, 0);
   const averageRating = ratings.length;
   return averageRating;
 }
@@ -39,6 +37,7 @@ export default function CardDestaque({
   valor,
   pagamento,
   ratings,
+  linkcompra,
 }) {
   const averageRating = calculateAverageRating(ratings);
   return (
@@ -48,13 +47,17 @@ export default function CardDestaque({
           <Image src={imagem} width={350} height={300} alt={produto} className="rounded-t-xl" />
         </div>
         <div className="mt-5 text-2xl font-bold">{produto}</div>
-        <StarRating rating={averageRating} />
+        {/* <StarRating rating={averageRating} /> */}
         <div className="text-2xl font-bold text-vermelho">R$ {valor}</div>
         <div className="p-5 text-sm">{pagamento}</div>
         <div className="space-x-5">
-          <button className="mb-5 rounded-xl bg-vermelho px-5 py-1 font-bold text-beje drop-shadow-dark2 transition-all duration-300 ease-in-out hover:bg-red-500">
+          <Link
+            href={linkcompra}
+            target="_blank"
+            className="mb-5 rounded-xl bg-vermelho px-5 py-2 font-bold text-beje drop-shadow-dark2 transition-all duration-300 ease-in-out hover:bg-red-500"
+          >
             Comprar
-          </button>
+          </Link>
           <Link
             href="/detalhes"
             className="mb-5 rounded-xl bg-vermelho px-5 py-2 font-bold text-beje drop-shadow-dark2 transition-all duration-300 ease-in-out hover:bg-red-500"
@@ -62,6 +65,7 @@ export default function CardDestaque({
             Detalhes
           </Link>
         </div>
+        <div className="p-3">&nbsp;</div>
       </div>
     </div>
   );

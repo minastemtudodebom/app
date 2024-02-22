@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from './Card';
 
 export default function Blog() {
   return (
@@ -8,19 +8,12 @@ export default function Blog() {
         <h2 className="text-2xl font-bold text-beje">Blog</h2>
         <div className="h-meuh w-16 bg-beje md:w-56" />
       </div>
-      <div className="mt-10 flex flex-wrap items-center justify-center gap-5">
-        <Card
-          title="Título"
-          description="Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos,"
-        />
-        <Card
-          title="Título"
-          description="Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos,"
-        />
-        <Card
-          title="Título"
-          description="Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos,"
-        />
+      <div className="flex flex-col justify-center items-center py-16 md:p-16">
+        <div className="mt-10 flex flex-wrap justify-center gap-5 md:px-16">
+          <Card slug="queijo" foto="/blog_queijo.jpg" title="Dicas" description="Queijos e Bebidas: Um Casamento Perfeito!" />
+          <Card slug="azeite" foto="/blog_azeite.jpg" title="Dicas" description="Descubra o Poder do Azeite Extra Virgem" />
+          <Card slug="goiabadacascao" foto="/blog_goiabadacascao.jpg" title="Receitas" description="A versatilidade da Goiabada Cascão" />
+        </div>
       </div>
     </div>
   );

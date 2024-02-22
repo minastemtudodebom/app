@@ -7,6 +7,11 @@ import {
   faUser,
   faCartShopping,
   faHome,
+  faCheese,
+  faMugHot,
+  faBottleDroplet,
+  faOilCan,
+  faCandyCane,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
@@ -14,9 +19,9 @@ export default function Nav() {
   return (
     <div>
       <div className="font-sans">
-        <div className="bg-vermelho">
+        <div className="bg-vermelho p-2">
           <h2 className="flex h-5 items-center justify-center text-sm font-bold text-beje">
-            Frete Grátis nas compras acima de R$ 300,00{" "}
+            Enviamos para todo o Brasil! Frete Grátis nas compras acima de R$ 500,00.{" "}
           </h2>
         </div>
         <div className="flex items-center justify-between px-5 md:justify-around">
@@ -24,7 +29,7 @@ export default function Nav() {
             <Link href="/">
               <Image
                 src={Logo}
-                alt="logo minas tem tudo de bom"
+                alt="Minas Tem Tudo de Bom"
                 className="w-32 md:w-48"
               />
             </Link>
@@ -48,7 +53,7 @@ export default function Nav() {
                 </p>
               </Link>
             </div>
-            <div className="space-2 flex flex-col items-center justify-center">
+            {/* <div className="space-2 flex flex-col items-center justify-center">
               <Link href="/cadastro" className="flex flex-col items-center ">
                 <FontAwesomeIcon
                   icon={faUser}
@@ -58,7 +63,7 @@ export default function Nav() {
                   Minha conta
                 </p>
               </Link>
-            </div>
+            </div> */}
             <div className="space-2 flex flex-col items-center justify-center">
               <a href="" className="flex flex-col items-center ">
                 <FontAwesomeIcon
@@ -70,7 +75,7 @@ export default function Nav() {
                 </p>
               </a>
             </div>
-            <div className="space-2 flex flex-col items-center justify-center">
+            {/* <div className="space-2 flex flex-col items-center justify-center">
               <a href="" className="flex flex-col items-center">
                 <FontAwesomeIcon
                   icon={faCartShopping}
@@ -80,7 +85,7 @@ export default function Nav() {
                   Meu carrinho
                 </p>
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="blcok md:hidden">
             <Sidebar />
@@ -88,8 +93,55 @@ export default function Nav() {
         </div>
       </div>
       <div className="hidden h-9 items-center justify-center gap-10 bg-vermelho font-bold text-beje drop-shadow-dark2 md:flex">
-        <button>QUEIJOS</button>
-        <button>DOCES</button>   
+        <Link
+          href="/"
+          className="hover:text-black ease-in-out duration-300"
+        >
+          <FontAwesomeIcon
+            icon={faCheese}
+          /> &nbsp;
+          QUEIJO
+        </Link>
+
+        <Link
+          href="/"
+          className="hover:text-black ease-in-out duration-300"
+        >
+          <FontAwesomeIcon
+            icon={faMugHot}
+          /> &nbsp;
+          CAFÉ
+        </Link>
+
+        <Link
+          href="/"
+          className="hover:text-black ease-in-out duration-300"
+        >
+          <FontAwesomeIcon
+            icon={faCandyCane}
+          /> &nbsp;
+          DOCE
+        </Link>
+
+        <Link
+          href="/"
+          className="hover:text-black ease-in-out duration-300"
+        >
+          <FontAwesomeIcon
+            icon={faOilCan}
+          /> &nbsp;
+          AZEITE
+        </Link>
+
+        <Link
+          href="/"
+          className="hover:text-black ease-in-out duration-300"
+        >
+          <FontAwesomeIcon
+            icon={faBottleDroplet}
+          /> &nbsp;
+          CACHAÇA
+        </Link>
       </div>
     </div>
   );
